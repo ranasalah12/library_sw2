@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+
+    <link rel="icon" th:href="@{/image/logo2.png}" type="image/x-icon">
+
+
+    <link th:href="@{/Styles/login.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/Styles/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>login</title>
+</head>
+<body>
+<br>
+
+<section>
+    <nav>
+
+
+        <div class="logo">
+            <img src="/image/logo.png" alt="error">
+        </div>
+
+        <ul>
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/#About">About</a></li>
+            <li><a href="/#Featured">Featured</a></li>
+            <li><a href="/#Arrivals">Arrivals</a></li>
+            <li><a href="/#Blog">Blog</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input type="text" placeholder="Type to search..">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cancel-icon">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="search-data">
+            </div>
+        </div>
+
+    </nav>
+
+
+</section>
+
+<br><br>
+
+<h3 th:text="${errorPassword}" style="color: #ffffff;background: crimson"></h3>
+
+<div class="container" id="container">
+
+    <div class="form-container sign-in-container" style="align-content: center">
+
+        <form action="/singA" method="post">
+
+            <h4 th:text="${message}" style="color: #3c3fe9; font-style: inherit"></h4>
+            <br>
+            <h1 style="color: #3c3fe9">Sign in Admin</h1>
+
+<br>
+            <input type="text" placeholder="User Name" id="username" name="username" required />
+            <input type="password" placeholder="Password" id="password" name="password" required />
+            <br>
+            <h4 th:text="${error}" style="color: red;"></h4>
+            <br>
+            <button type="submit">Sign In</button><br>
+
+        </form>
+    </div>
+
+
+</div>
+
+<br><br><br><br><br><br><br>
+
+
+
+<script src="/JavaScript/login.js"></script>
+<script src="/JavaScript/searchBox.js"></script>
+</body>
+</html>

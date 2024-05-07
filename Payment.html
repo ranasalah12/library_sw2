@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+
+    <link rel="icon" th:href="@{/image/logo2.png}" type="image/x-icon">
+    <link rel="stylesheet" th:href="@{/Styles/style2.css}">
+    <link rel="stylesheet" th:href="@{/Styles/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>login</title>
+</head>
+<body>
+<section>
+    <nav>
+
+
+        <div class="logo">
+            <img src="/image/logo.png" alt="error">
+        </div>
+
+
+        <ul>
+            <li><h2 th:text="${Uname}" style="color: white; font-style: inherit ;background: #3c3fe9"></h2></li>
+            <li><a href="/AfterLogin">Home</a></li>
+            <li><a href="/AfterLogin#About">About</a></li>
+            <li><a href="/AfterLogin#Featured">Featured</a></li>
+            <li><a href="/AfterLogin#Arrivals">Arrivals</a></li>
+            <li><a href="/AfterLogin#Blog">Blog</a></li>
+        </ul>
+
+        <div class="search-box">
+            <input type="text" placeholder="Type to search..">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cancel-icon">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="search-data">
+            </div>
+        </div>
+
+    </nav>
+
+
+
+
+    <div class="arrivals2" id="Arrivals">
+        <h1>you can scan the QRcode to get the book</h1>
+
+        <div class="arrivals2_box">
+         <div class="arrivals2_card">
+
+        <div class="arrivals2_image">
+            <img src="/image/book_10.png" alt="image">
+
+        </div>
+        <div class="arrivals2_tag">
+            <div class="arrivals2_icon">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+            <!--
+            -->
+
+            <div class="arrivals2_box">
+                <div class="arrivals2_card">
+
+                    <div class="arrivals2_image2">
+                        <img src="/image/QR.jpeg">
+
+                    </div>
+                </div>
+            </div>
+            <!--        -->
+    </div>
+
+    </div>
+
+
+
+
+</section>
+
+
+
+<script src="/JavaScript/login.js"></script>
+<script src="/JavaScript/searchBox.js"></script>
+</body>
+</html>

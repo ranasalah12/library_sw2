@@ -1,0 +1,97 @@
+
+/*arrivals*/
+
+.arrivals2{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 35px;
+    /*padding-left: 50px;*/
+}
+
+.arrivals2 h1{
+    font-size: 50px;
+    text-align: right;
+    margin-bottom: 35px;
+    padding-top: 120px;
+    padding-right: 250px;
+    color: #3c3fe9;
+}
+
+.arrivals2 .arrivals2_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+    padding-left: 50px;
+}
+
+.arrivals2 .arrivals2_box .arrivals2_card{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.arrivals2 .arrivals2_box .arrivals2_card:hover{
+    box-shadow: 0 0 5px #3c3fe9;
+}
+
+.arrivals2 .arrivals2_box .arrivals2_card .arrivals2_image{
+    width: 250px;
+    height: 350px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+
+.arrivals2 .arrivals2_box .arrivals2_card .arrivals2_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals2 .arrivals2_box .arrivals2_card:hover .arrivals2_image img{
+    transform: scale(1.1);
+}
+.arrivals2 .arrivals2_box .arrivals2_card .arrivals2_image2{
+    width: 400px;
+    height: 380px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.arrivals2 .arrivals2_box .arrivals2_card .arrivals2_image2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.arrivals2 .arrivals2_box .arrivals2_card .arrivals2_tag p{
+    font-family: queen of camelot;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivals2 .arrivals2_box .arrivals2_card .arrivals2_tag .arrivals2_icon{
+    color: #3c3fe9;
+    margin-bottom: 18px;
+}
+
+.arrivals2 .arrivals2_box .arrivals2_card .arrivals2_tag .arrivals2_btn{
+    padding: 8px 20px;
+    border: 2px solid #3c3fe9;
+    text-decoration: none;
+    color: #000;
+}
+
